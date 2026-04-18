@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Memory Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>Memory</h1>
+            <div class="stats">
+                <span>Moves: <b id="moves">0</b></span>
+                <span>Time: <b id="timer">00:00</b></span>
+            </div>
+            <button id="restart-btn">Restart Game</button>
+        </header>
+
+        <div class="grid" id="card-grid">
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="win-modal">
+        <div class="modal-content">
+            <h2>Well Done!</h2>
+            <p>You finished in <span id="final-moves">0</span> moves.</p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
